@@ -1,0 +1,204 @@
+inherited CadProdutosF: TCadProdutosF
+  Left = 477
+  Height = 496
+  Top = 204
+  Width = 691
+  Caption = 'Produtos'
+  ClientHeight = 496
+  ClientWidth = 691
+  OnCreate = FormCreate
+  OnResize = FormResize
+  inherited pnlHeader: TPanel
+    Width = 691
+    ClientWidth = 691
+    inherited pnlLogo: TPanel
+      BevelColor = clBtnText
+      Color = clNone
+      ParentColor = False
+    end
+  end
+  inherited PageControl1: TPageControl
+    Height = 446
+    Width = 691
+    inherited tbsDados: TTabSheet
+      ClientHeight = 418
+      ClientWidth = 683
+      inherited gridDados: TDBGrid
+        Height = 418
+        Width = 683
+      end
+    end
+    inherited tbsCadastro: TTabSheet
+      ClientHeight = 418
+      ClientWidth = 683
+      inherited pnlFooter: TPanel
+        Top = 368
+        Width = 683
+        ClientWidth = 683
+        inherited btnSair: TBitBtn
+          Left = 597
+        end
+      end
+      object pnlCampos: TPanel[1]
+        Left = 40
+        Height = 272
+        Top = 8
+        Width = 592
+        ClientHeight = 272
+        ClientWidth = 592
+        Color = cl3DLight
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 1
+        object edtIdCadProd: TEdit
+          Left = 160
+          Height = 29
+          Top = 16
+          Width = 64
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          NumbersOnly = True
+          ParentFont = False
+          ReadOnly = True
+          TabOrder = 0
+        end
+        object edtDescSimples: TEdit
+          Left = 160
+          Height = 29
+          Top = 52
+          Width = 376
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 1
+        end
+        object memDescCompleta: TMemo
+          Left = 160
+          Height = 59
+          Top = 97
+          Width = 376
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 2
+        end
+        object FloatSpinEditEx1: TFloatSpinEditEx
+          Left = 160
+          Height = 29
+          Top = 164
+          Width = 103
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          MaxLength = 0
+          ParentFont = False
+          SpinButtonWidth = 17
+          TabOrder = 3
+          DecimalSeparator = ','
+          UpDownVisible = False
+        end
+        object cbTipoProduto: TComboBox
+          Left = 160
+          Height = 29
+          Top = 200
+          Width = 192
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ItemHeight = 21
+          ParentFont = False
+          TabOrder = 4
+          TextHint = 'Tipo do Produto'
+        end
+        object lblIdProduto: TLabel
+          Left = 126
+          Height = 20
+          Top = 19
+          Width = 18
+          Alignment = taRightJustify
+          Caption = 'Id:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object lblDescSimples: TLabel
+          Left = 16
+          Height = 20
+          Top = 56
+          Width = 128
+          Alignment = taRightJustify
+          Caption = 'Descrição simples:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object lblDescCompleta: TLabel
+          Left = 4
+          Height = 20
+          Top = 96
+          Width = 140
+          Alignment = taRightJustify
+          Caption = 'Descrição completa:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object lblValorVenda: TLabel
+          Left = 58
+          Height = 20
+          Top = 167
+          Width = 86
+          Alignment = taRightJustify
+          Caption = 'Valor venda:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object lblTipoProduto: TLabel
+          Left = 27
+          Height = 20
+          Top = 203
+          Width = 117
+          Alignment = taRightJustify
+          Caption = 'Tipo de produto:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Color = clBlack
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+      end
+    end
+  end
+end

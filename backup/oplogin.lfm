@@ -1,0 +1,132 @@
+object OpLoginF: TOpLoginF
+  Left = 268
+  Height = 328
+  Top = 120
+  Width = 395
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Login'
+  ClientHeight = 328
+  ClientWidth = 395
+  Color = clWhite
+  Position = poDesktopCenter
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormCreate
+  OnResize = FormResize
+  object pnlLogin: TPanel
+    Left = 48
+    Height = 256
+    Top = 32
+    Width = 312
+    BorderStyle = bsSingle
+    ClientHeight = 252
+    ClientWidth = 308
+    Color = cl3DLight
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object edtEmail: TEdit
+      Left = 32
+      Height = 29
+      Top = 56
+      Width = 240
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 0
+    end
+    object lblEmail: TLabel
+      Left = 32
+      Height = 20
+      Top = 32
+      Width = 40
+      Caption = 'Email:'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object lblSenha: TLabel
+      Left = 32
+      Height = 20
+      Top = 88
+      Width = 43
+      Caption = 'Senha:'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object edtSenha: TEdit
+      Left = 32
+      Height = 29
+      Top = 112
+      Width = 240
+      EchoMode = emPassword
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      PasswordChar = '*'
+      TabOrder = 1
+    end
+    object lblEsqueciSenha: TLabel
+      Cursor = crHandPoint
+      Left = 88
+      Height = 20
+      Top = 192
+      Width = 146
+      Caption = 'Esqueci minha senha.'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Name = 'Segoe UI Semibold'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      OnClick = lblEsqueciSenhaClick
+      OnMouseEnter = lblEsqueciSenhaMouseEnter
+      OnMouseLeave = lblEsqueciSenhaMouseLeave
+    end
+    object btnEntrar: TButton
+      Cursor = crHandPoint
+      Left = 64
+      Height = 33
+      Top = 152
+      Width = 75
+      Caption = 'Entrar'
+      TabOrder = 2
+      OnClick = btnEntrarClick
+    end
+    object btnCancelar: TButton
+      Cursor = crHandPoint
+      Left = 176
+      Height = 33
+      Top = 152
+      Width = 75
+      Caption = 'Cancelar'
+      TabOrder = 3
+      OnClick = btnCancelarClick
+    end
+  end
+  object lblSCP: TLabel
+    Left = 0
+    Height = 32
+    Top = 0
+    Width = 395
+    Align = alTop
+    Alignment = taCenter
+    Caption = 'SISTEMA SCP'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Name = 'Perpetua Titling MT'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end

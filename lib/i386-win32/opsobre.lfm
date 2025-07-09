@@ -1,0 +1,36 @@
+object OpSobreF: TOpSobreF
+  Left = 470
+  Height = 240
+  Top = 266
+  Width = 320
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Sobre'
+  ClientHeight = 240
+  ClientWidth = 320
+  Position = poDesktopCenter
+  LCLVersion = '4.0.0.4'
+  object pnlSobre: TPanel
+    Left = 32
+    Height = 120
+    Top = 48
+    Width = 256
+    Anchors = [akLeft, akRight]
+    ClientHeight = 120
+    ClientWidth = 256
+    TabOrder = 0
+    object lblSobre: TLabel
+      Left = 0
+      Height = 100
+      Top = 10
+      Width = 254
+      Alignment = taCenter
+      Anchors = [akLeft, akRight]
+      Caption = 'Sistema SCP v1.0'#13#10'Desenvolvido por Erick e Henrique'#13#10'Saber T.i Turma 12'#13#10'Maringá'#13#10'2025'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+  end
+end

@@ -1,0 +1,224 @@
+inherited CadClientesF: TCadClientesF
+  Height = 525
+  Width = 813
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Clientes'
+  ClientHeight = 525
+  ClientWidth = 813
+  OnCreate = FormCreate
+  inherited pnlHeader: TPanel
+    Width = 813
+    ClientWidth = 813
+  end
+  inherited PageControl1: TPageControl
+    Height = 475
+    Width = 813
+    inherited tbsDados: TTabSheet
+      ClientHeight = 447
+      ClientWidth = 805
+      inherited gridDados: TDBGrid
+        Height = 447
+        Width = 805
+      end
+    end
+    inherited tbsCadastro: TTabSheet
+      ClientHeight = 447
+      ClientWidth = 805
+      inherited pnlFooter: TPanel
+        Top = 397
+        Width = 805
+        ClientWidth = 805
+        inherited btnSair: TBitBtn
+          Left = 719
+        end
+      end
+      object pnlCamposClientes: TPanel[1]
+        Left = 64
+        Height = 320
+        Top = 8
+        Width = 624
+        ClientHeight = 320
+        ClientWidth = 624
+        Color = cl3DLight
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 1
+        object edtIdCadCli: TEdit
+          Left = 421
+          Height = 29
+          Top = 24
+          Width = 80
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 0
+        end
+        object edtCpfCnpj: TEdit
+          Left = 181
+          Height = 29
+          Top = 24
+          Width = 144
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 1
+        end
+        object edtNomeFantasia: TEdit
+          Left = 181
+          Height = 29
+          Top = 66
+          Width = 320
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 2
+        end
+        object edtRazaoSocial: TEdit
+          Left = 181
+          Height = 29
+          Top = 114
+          Width = 320
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 3
+        end
+        object edtEndereco: TEdit
+          Left = 181
+          Height = 29
+          Top = 160
+          Width = 320
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 4
+        end
+        object edtTelefone: TEdit
+          Left = 181
+          Height = 29
+          Top = 206
+          Width = 192
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 5
+        end
+        object edtEmail: TEdit
+          Left = 181
+          Height = 29
+          Top = 257
+          Width = 272
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -16
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          ParentFont = False
+          TabOrder = 6
+        end
+        object lblCpfCnpj: TLabel
+          Left = 103
+          Height = 20
+          Top = 29
+          Width = 66
+          Caption = 'Cpf/Cnpj:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object lblIdCadCli: TLabel
+          Left = 397
+          Height = 20
+          Top = 29
+          Width = 18
+          Caption = 'Id:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object lblNomeFantasia: TLabel
+          Left = 64
+          Height = 20
+          Top = 71
+          Width = 109
+          Caption = 'Nome Fantasia:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object lblRazaoSocial: TLabel
+          Left = 80
+          Height = 20
+          Top = 120
+          Width = 86
+          Caption = 'Razão Social'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object lblEndereco: TLabel
+          Left = 100
+          Height = 20
+          Top = 165
+          Width = 68
+          Caption = 'Endereço:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object lblTelefone: TLabel
+          Left = 105
+          Height = 20
+          Top = 213
+          Width = 64
+          Caption = 'Telefone:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+        object lblEmail: TLabel
+          Left = 125
+          Height = 20
+          Top = 259
+          Width = 42
+          Caption = 'Email:'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -15
+          Font.Pitch = fpVariable
+          Font.Quality = fqDraft
+          Font.Style = [fsBold]
+          ParentFont = False
+        end
+      end
+    end
+  end
+end

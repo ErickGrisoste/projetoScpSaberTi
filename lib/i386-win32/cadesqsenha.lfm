@@ -1,0 +1,120 @@
+object CadEsqSenhaF: TCadEsqSenhaF
+  Left = 280
+  Height = 328
+  Top = 122
+  Width = 395
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Redefinir Senha'
+  ClientHeight = 328
+  ClientWidth = 395
+  Color = clWhite
+  Position = poDesktopCenter
+  LCLVersion = '4.0.0.4'
+  OnCreate = FormResize
+  OnResize = FormResize
+  object pnlRedefSenha: TPanel
+    Left = 40
+    Height = 256
+    Top = 32
+    Width = 312
+    BorderStyle = bsSingle
+    ClientHeight = 252
+    ClientWidth = 308
+    Color = cl3DLight
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 0
+    object edtEmail: TEdit
+      Left = 32
+      Height = 29
+      Top = 40
+      Width = 240
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 0
+    end
+    object edtNovaSenha: TEdit
+      Left = 32
+      Height = 29
+      Top = 96
+      Width = 240
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 1
+    end
+    object edtConfirmaNovaSenha: TEdit
+      Left = 32
+      Height = 29
+      Top = 160
+      Width = 240
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -16
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+      TabOrder = 2
+    end
+    object lblEmail: TLabel
+      Left = 32
+      Height = 20
+      Top = 16
+      Width = 40
+      Caption = 'Email:'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object lblNovaSenha: TLabel
+      Left = 32
+      Height = 20
+      Top = 77
+      Width = 80
+      Caption = 'Nova senha:'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object lblConfirmaNovaSenha: TLabel
+      Left = 32
+      Height = 20
+      Top = 136
+      Width = 147
+      Caption = 'Confirmar nova senha:'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentFont = False
+    end
+    object btnEntrar: TButton
+      Cursor = crHandPoint
+      Left = 32
+      Height = 33
+      Top = 200
+      Width = 70
+      Caption = 'Entrar'
+      TabOrder = 3
+      OnClick = btnEntrarClick
+    end
+    object btnCancelar: TButton
+      Cursor = crHandPoint
+      Left = 202
+      Height = 33
+      Top = 200
+      Width = 70
+      Caption = 'Cancelar'
+      TabOrder = 4
+      OnClick = btnCancelarClick
+    end
+  end
+end
